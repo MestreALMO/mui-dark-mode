@@ -3,7 +3,7 @@ import { Button, CssBaseline, Typography } from "@mui/material";
 
 const darkTheme = createTheme({
   palette: {
-    mode: "light",
+    mode: "dark",
   },
 });
 
