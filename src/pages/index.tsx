@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
+import { AppMui } from "../components/appMui";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,9 @@ const Home: NextPage = () => {
 
       <main>
         <Typography variant="h1">DevALMO, YouTube channel</Typography>
+        <br />
+        <br />
+        <AppMui />
       </main>
 
       <footer></footer>
