@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { useCtxThemeSelected } from "../../context/CtxThemeSelected";
 
 export const Counter = () => {
-  const { ctxThemeSelected, setCtxThemeSelected } = useCtxThemeSelected();
+  const { ctxThemeSelected, changeCtxThemeSelected } = useCtxThemeSelected();
 
   return (
     <>
@@ -10,7 +10,7 @@ export const Counter = () => {
       <h2>Counter: {ctxThemeSelected}</h2>
       <button
         onClick={() => {
-          setCtxThemeSelected(ctxThemeSelected + 1);
+          changeCtxThemeSelected();
         }}
       >
         Count + 1
