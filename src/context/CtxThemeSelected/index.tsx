@@ -1,6 +1,13 @@
 import { createContext, useContext, useState } from "react";
 
-const CtxThemeSelectedContext = createContext<any>({});
+interface CtxThemeSelectedContextProps {
+  ctxThemeSelected: string;
+  setCtxThemeSelected: (c: string) => void;
+}
+
+const CtxThemeSelectedContext = createContext(
+  {} as CtxThemeSelectedContextProps
+);
 
 interface CtxThemeSelectedProviderProps {
   children: JSX.Element | JSX.Element[];
