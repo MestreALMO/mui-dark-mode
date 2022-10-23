@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { useCtxThemeSelected } from "../../context/CtxThemeSelected";
+import { useCtxThemeSelected } from "../../context/ctxThemeSelected";
 
 export const Counter = () => {
   const { ctxThemeSelected, changeCtxThemeSelected } = useCtxThemeSelected();
