@@ -1,5 +1,4 @@
 import { Counter } from "@/components/counter";
-import CountProvider from "@/context/CtxThemeSelected";
 import { Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -16,9 +15,7 @@ const Home: NextPage = () => {
 
         <main>
           <Typography variant="h1">DevALMO, YouTube channel</Typography>
-          <CountProvider>
-            <Counter />
-          </CountProvider>
+          <Counter />
         </main>
 
         <footer></footer>

@@ -8,6 +8,8 @@ import Document, {
   DocumentContext,
 } from "next/document";
 
+import { CssBaseline } from "@mui/material";
+
 class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
@@ -31,6 +33,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
+          <CssBaseline />
           <Main />
           <NextScript />
         </body>

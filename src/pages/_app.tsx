@@ -1,11 +1,12 @@
-import { CssBaseline } from "@mui/material";
 import type { AppProps } from "next/app";
+import CtxThemeSelectedProvider from "@/context/CtxThemeSelected";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <CssBaseline />
-      <Component {...pageProps} />
+      <CtxThemeSelectedProvider>
+        <Component {...pageProps} />
+      </CtxThemeSelectedProvider>
     </>
   );
 }
